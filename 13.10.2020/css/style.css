@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.spam {
+    display: flex;
+    justify-content: space-between;
+}
+
+.spam-1 {
+    background-color: red;
+    width: 15%;
+    height: auto;
+}
+.spam-2 {
+    width: 15%;
+    height: auto;
+    background-color: blue;
+}
+
+header {
+    background-color: silver;
+    height: 50px;
+    position: relative;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 6px;
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-image: url("../images/alex.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding:0 30px 30px 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+
+h1:hover {
+    color: gold;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.nalyvka__img:hover {
+    transform: scale(1.1);
+}
+
+
+main h2 ~ p {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.storage {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.storage__item {
+    list-style: none;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.storage__item li {
+    padding-bottom: 10px;
+}
+
+.storage__item ~ h4 {
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
