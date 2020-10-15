@@ -94,3 +94,7 @@ main h2 ~ p {
     font-size: 25px;
     margin-bottom: 20px;
 }
+.list__img {
+    height: 500px;
+    width: auto;
+}
