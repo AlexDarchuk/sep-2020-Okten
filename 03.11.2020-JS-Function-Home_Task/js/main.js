@@ -305,5 +305,3 @@
 
 // let rrr = (c, v) => c / v;
 
-// let ttt = rrr(fff, 2);
-// console.log(ttt);
