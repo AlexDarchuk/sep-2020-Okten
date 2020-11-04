@@ -213,24 +213,6 @@
 // console.log(numArr2([0,1,2,3,4]));
 // console.log(numArr2([0,0,1,0]));
 
-// function minNumArr (minArray){
-//     let minValue = minArray[0];
-
-//    for (let i = 0; i < minArray.length; i++) {
-//        if(minArray[i] < minValue) {
-//            minValue = minArray[i]
-//        }
-//     }   
-
-//     console.log(minValue);
-// }
-// minNumArr(minArray);
-
-
-// function maxNumberArray (max) {
-   
-//     console.log(Math.max(max));
-// }
 
 
 
