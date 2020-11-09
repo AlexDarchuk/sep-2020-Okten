@@ -216,74 +216,195 @@
 
 
 
+// Створити функцію яка :
+// - Додає в боді блок з текстом "Hello owu"
+// - Додає в боді елемент з текстом . Тип елементу та текст отримати через аргументи
+// let text = document.createElement('h1');
+// text.innerText = 'Hello owu Hello';
+
+// function textInBody (arguments) {
+//     let block = document.createElement('div');
+//     block.innerText = 'Hello owu';
+//     document.body.appendChild(block);
+//     document.body.appendChild(arguments);
+// }
+// textInBody(text);
+// - приймає масив автомобілів (можна взяти з попередніх дз ),та  індентифікатор елемнту в який потрібно додати список цих автомобілів.
+// Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали. Всі властивості авто в обному блоці
+// - приймає масив автомобілів (можна взяти з попередніх дз ),та  індентифікатор елемнту в який потрібно додати список цих автомобілів.
+// Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали.
+// Для кожної властивості створити всередені блока автомоблія свій блок
 
 
+// let avto2 = [
+//     {production: 'toyota', power: 67, color: 'black', year: 2010},
+//     {production: 'mazda', power: 86, color: 'gray', year: 2015},
+//     {production: 'opel', power: 90, color: 'red', year: 2013},
+//     {production: 'bmw', power: 70, color: 'black', year: 2009},
+//     {production: 'citroen', power: 83, color: 'gray', year: 2017},
+//     {production: 'renault', power: 97, color: 'red', year: 2019},
+//     {production: 'honda', power: 80, color: 'black', year: 2000},
+//     {production: 'kia', power: 65, color:'gray', year: 2016},
+//     {production: 'audi', power: 91, color: 'red', year: 2004},
+//     {production: 'mercedes', power: 100, color: 'black', year: 2017}
+// ];
 
+// - приймає масив автомобілів (можна взяти з попередніх дз ),та  індентифікатор елемнту в який потрібно додати список цих автомобілів.
+// function avtoInId (avto) {
+//     let block = document.getElementById('avto');
+//     let list = document.createElement('ul');
+//         block.appendChild(list);
+//     for (let i = 0; i < avto.length; i++) {
+//        let car = avto[i];
+//        let listAvto = document.createElement('li');
+//        listAvto.innerHTML = car.production;
+//        list.appendChild(listAvto);
+//     }
+// }
+// avtoInId(avto2);
 
+// function avtoBlock (avto) {
+//     let block = document.getElementById('avto');
+//     for (let i = 0; i < avto.length; i++) {
+//         let avtoItem = avto[i];
+//         let blockDiv = document.createElement('div');
+//         blockDiv.innerText = `${avtoItem.production} ${avtoItem.power} ${avtoItem.color} ${avtoItem.year}`;
+//         block.appendChild(blockDiv);
+//     }
+// }
+// avtoBlock(avto2);
 
+// function avtoInBlock (avto) {
+//     let block = document.getElementById('avto');
+    
+    
+//     for (let i = 0; i < avto.length; i++) {
+        
+//       for (const key in avto[i]) {
+//         let blockDiv = document.createElement('div');
+//             blockDiv.innerHTML = `${key} : ${avto[i][key]}`;
+//             block.appendChild(blockDiv);
+//           }  
+//       }
+//     }
+   
+// avtoInBlock(avto2);
 
+// **- функція приймає 2 масиви з рівною кількістю об'єктів та з'єднює в один об'єкт користувача та місто з відповідними "id" та "user_id",
+// та повертає масив цих з'єднаних об'єктів.
+// Приклад масивів:
 
+// let usersWithId = [
+//     {id: 1, name: 'vasya', age: 31, status: false}, 
+//     {id: 2, name: 'petya', age: 30, status: true}, 
+//     {id: 3, name: 'kolya', age: 29, status: true}, 
+//     {id: 4, name: 'olya', age: 28, status: false}
+// ];
 
+// let citiesWithId = [
+//     {user_id: 3, country: 'USA', city: 'Portland'}, 
+//     {user_id: 1, country: 'Ukraine', city: 'Ternopil'}, 
+//     {user_id: 2, country: 'Poland', city: 'Krakow'}, 
+//     {user_id: 4, country: 'USA', city: 'Miami'}
+// ];
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// maxNumberArray(maxArray);
-// let str = "Helllooo World";
-// let charArt = str.indexOf('W');
-// console.log(charArt);
-// let strSl = str.slice(9);
-// console.log(strSl);
-
-// let nameS = 'Alex Darchuk';
-// let strings = nameS.split(' ');
-// console.log(strings);
-
-// let arr = [56, 5, 3, 12];
-// let s1 = arr.join(' ');
-// console.log(s1);
-
-
-// let s2 = s1.split(' ');
-// console.log(s2);
-// let ink = s2.includes('Yarik');
-// console.log(ink);
-
-
-// function sumator (one, two) {
-//     console.log(one + two);
-//     return one + two;
+// function usersCities (userArray, cityArray) {
+//     let users = JSON.parse(JSON.stringify(userArray));
+//     let cities = JSON.parse(JSON.stringify(cityArray));
+//         for (const city of cities) {
+//           for (const user of users) {
+//               if (user.id === city.user_id) {
+//                user.adress = city;
+//            }
+//         }  
+//     }
+//     return users;
 // }
 
-// let sumRes = sumator(5, 10);
+// let userCitiesId = usersCities (usersWithId, citiesWithId);
+// console.log(userCitiesId);
 
-// console.log(sumRes);
 
-// function divider (sum, divider) {
-//     console.log(sum / divider);
+// function usersCities (usersWithId, citiesWithId) {
+//     let users = [];
+//         for (const city of citiesWithId) {
+//           for (const user of usersWithId) {
+//               if (user.id === city.user_id) {
+//                     user.adress = city;
+//                     users.unshift(user);
+//             }
+//         }  
+//     }
+//     return users;
 // }
 
-// divider(sumRes, 3)
+// let userCitiesId = usersCities (usersWithId, citiesWithId);
+// console.log(userCitiesId);
 
-// let ddd = (a,b) => a + b;
 
-// let fff = ddd(10, 45);
-// console.log(fff);
+// ***- беремо завдання з правилами з укроку №3 :
+// Та робимо це функцією.При цьому правила отримувати через аргумент.
+// "Є масив котрий характеризує правила. Створити скрипт який ітерує цей масив, та робить з кожне правило в окремому блоці.
+// При цому в блоці, номер правила записати в свій блок, текст правила записати в свій окремий блок.
+// Результатом відпрацювання скріпта повинна бути структура яка міститься в блоці wrap файла rule.html
 
-// let rrr = (c, v) => c / v;
+			let rules = [
+				{
+					title: 'Первое правило Бойцовского клуба.',
+					body: 'Никому не рассказывать о Бойцовском клубе.'
+				},
+				{
+					title: 'Второе правило Бойцовского клуба.',
+					body: 'Никогда никому не рассказывать о Бойцовском клубе.'
+				},
+				{
+					title: 'Третье правило Бойцовского клуба.',
+					body: 'В схватке участвуют только двое.'
+				},
+				{
+					title: 'Четвертое правило Бойцовского клуба.',
+					body: 'Не более одного поединка за один раз.'
+				},
+				{
+					title: 'Пятое правило Бойцовского клуба.',
+					body: 'Бойцы сражаются без обуви и голые по пояс.'
+				},
+				{
+					title: 'Шестое правило Бойцовского клуба.',
+					body: 'Поединок продолжается столько, сколько потребуется.'
+				},
+				{
+					title: 'Седьмое правило Бойцовского клуба.',
+					body: 'Если противник потерял сознание или делает вид, что потерял, или говорит «Хватит» — поединок окончен.'
+				},
+				{
+					title: 'Восьмое и последнее правило Бойцовского клуба.',
+					body: 'Новичок обязан принять бой.'
+				},
+
+			];
+
+
+let wrap = document.getElementById('wrap');
+
+
+function textInBlock(arguments) {
+
+    for (let i = 0; i < arguments.length; i++) {
+        const element = arguments[i];
+        let rulesBlock = document.createElement('div');
+        let h2 = document.createElement('h2');
+        let p = document.createElement('p');
+        wrap.appendChild(rulesBlock);
+        wrap.appendChild(h2);
+        wrap.appendChild(p);
+        rulesBlock.className = `rules rule${i + 1}`;
+        // rulesBlock.classList.add('rules');
+        // rulesBlock.classList.add(`bab rule${i + 1}`);
+        h2.innerText = element.title;
+        p.innerText = element.body; 
+    }
+   
+}
+textInBlock(rules);
 
