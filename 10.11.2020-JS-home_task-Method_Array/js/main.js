@@ -40,7 +40,7 @@ let numberArray = [3, 8, 56, -78, 90, 1, 456, 5, 32, 6, 40, 7, -32, 927, 58, 14,
 
 // - создать массив со словами на 15-20 элементов.
 
-let namesArray = ['Edward', 'Kolya', 'Tanya', 'Sharpe', 'Magnetic', 'Alex', 'Olga', 'Dorota', 'Sem', 'Dima', 'Anna', 'Edi', 'Andre', 'Ira', 'Sasha'];
+// let namesArray = ['Edward', 'Kolya', 'Tanya', 'Sharpe', 'Magnetic', 'Alex', 'Olga', 'Dorota', 'Sem', 'Dima', 'Anna', 'Edi', 'Andre', 'Ira', 'Sasha'];
 
 
 // -- отсортировать его по алфавиту в восходящем порядке.
@@ -85,19 +85,19 @@ let namesArray = ['Edward', 'Kolya', 'Tanya', 'Sharpe', 'Magnetic', 'Alex', 'Olg
 
 // Все робити через функції масивів (foreach, map ...тд)
 // Дан масив :
-let users = [ 
-    {name: 'vasya', age: 31, status: false}, 
-    {name: 'petya', age: 30, status: true}, 
-    {name: 'kolya', age: 29, status: true}, 
-    {name: 'olya', age: 28, status: false}, 
-    {name: 'max', age: 30, status: true}, 
-    {name: 'anya', age: 31, status: false}, 
-    {name: 'oleg', age: 28, status: false}, 
-    {name: 'andrey', age: 29, status: true}, 
-    {name: 'masha', age: 30, status: true}, 
-    {name: 'olya', age: 31, status: false}, 
-    {name: 'max', age: 31, status: true} 
-];
+// let users = [ 
+//     {name: 'vasya', age: 31, status: false}, 
+//     {name: 'petya', age: 30, status: true}, 
+//     {name: 'kolya', age: 29, status: true}, 
+//     {name: 'olya', age: 28, status: false}, 
+//     {name: 'max', age: 30, status: true}, 
+//     {name: 'anya', age: 31, status: false}, 
+//     {name: 'oleg', age: 28, status: false}, 
+//     {name: 'andrey', age: 29, status: true}, 
+//     {name: 'masha', age: 30, status: true}, 
+//     {name: 'olya', age: 31, status: false}, 
+//     {name: 'max', age: 31, status: true} 
+// ];
 // - відсортувати його за  віком (зростання , а потім окремо спадання)
 
 // let usersAge = users.sort((a, b) => {
@@ -124,11 +124,11 @@ let users = [
 
 // let usersId = JSON.parse(JSON.stringify(users));
 
-// let userIdMap = usersId.map((value, index) => {
-//     value.name_id = index + 1;
-//     return value;
-// });
-// console.log(userIdMap);
+let userIdMap = usersId.map((value, index) => {
+    value.name_id = index + 1;
+    return value;
+});
+console.log(userIdMap);
 
 
 // // - відсортувати його за індентифікатором
@@ -141,23 +141,5 @@ let users = [
 
 // // -- наисать функцию калькулятора с 2мя числами и колбеком
 
-// function calc( a, b, callback) {
-//     return callback(a,b);
-// }
-// calc(20, 5, function(a,b) {
-//     console.log(a + b);
-//     console.log(a - b);
-//     console.log(a * b);
-//     console.log(a / b);
-// });
+
 // // -- наисать функцию калькулятора с 3мя числами и колбеком
-// console.log('________________________________');
-// function calc2( a, b, c, callback) {
-//     return callback(a,b,c);
-// }
-// calc2(20, 5, 2, function(a,b,c) {
-//     console.log(a + b * c);
-//     console.log(a - b + c);
-//     console.log(a * b / c);
-//     console.log(a / b + c);
-// });
