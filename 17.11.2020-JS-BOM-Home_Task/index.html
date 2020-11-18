@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM</title>
+</head>
+<body>
+    <div class="text">
+        <form action="" name="formText">
+            <textarea id="text" name="textArea" cols="30" rows="10"></textarea>
+        </form>
+    </div>
+
+    <form id="formAction" oninput="formSave(this)">
+        <input type="text" name="" id="textAction"><br><br>
+        <input type="tel" name="" id="telAction" placeholder="Your phone"><br>
+        <textArea id="areaAction" cols="50" rows="10"></textArea><br>
+        <label for="checkAction">USA</label>
+        <input type="checkbox" name="action" id="checkAction">
+
+        <label for="checkAction2">Ukraine</label>
+        <input type="checkbox" name="action" id="checkAction2">
+
+        <label for="checkAction3">Poland</label>
+        <input type="checkbox" name="action" id="checkAction3"><br><br><br>
+
+        <input type="radio" id="contactAction1"
+        name="contact" value="false">
+       <label for="contactAction1">Email</label>
+   
+       <input type="radio" id="contactAction2"
+        name="contact"  value="false">
+       <label for="contactAction2">Phone</label>
+   
+       <input type="radio" id="contactAction3"
+        name="contact" value="false">
+       <label for="contactAction3">Mail</label><br>
+
+       <select name="select" id="selectAction">
+           <option>optionAction1</option>
+           <option>optionAction2</option>
+           <option>optionAction3</option>
+           <option>optionAction4</option>
+           <option>optionAction5</option>
+           <option>optionAction6</option>
+       </select>
+    </form><br>
+    <br>
+    <br>
+    <div>
+        <button id="left">&#x21D0;</button>
+        <button id="right">&#x21D2;</button>
+    </div>
+    <div">
+        <form action="" name="formHistory">
+            <textarea id="text" name="textHistory" cols="70" rows="10"></textarea><br>
+        </form>
+        <button id="bntHistory" type="submit">push</button>
+    </div><br><br>
+    <div>
+        <form action="" id="user">
+            <input type="text" id="name" placeholder="Введіть ваше імя"><br>
+            <input type="text" id="lastName" placeholder="Введіть ваше прізвище"><br>
+            <input type="text" id="surName" placeholder="Введіть імя по батькові"><br>
+            <input type="tel" id="tel" placeholder="Ваш номер"><br>
+            <input type="email" id="email" placeholder="Email"><br>
+            <input type="text" id="work" placeholder="Назва фірми"><br>
+            <input type="text" id="department" placeholder="Назва відділу"><br>
+            <input type="date" id="data"><br>
+            <input id="btnUser" type="submit" value="push"></input>
+        </form>
+    </div>
+    <div id="content">
+        
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
