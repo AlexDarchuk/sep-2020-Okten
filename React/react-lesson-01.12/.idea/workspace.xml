@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88218c66-a24e-4184-a362-5e7d05e24aed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/comment/Comment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/comments/Comments.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/post/PostComponent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/posts/Posts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/serviceComment/CommentService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/servicePost/PostService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../02.11.2020-JS-DOM-home_task/task2/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../02.11.2020-JS-DOM-home_task/task2/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../03.11.2020-JS-Function-Home_Task/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../03.11.2020-JS-Function-Home_Task/js/main.js" afterDir="false" />
@@ -13,10 +11,11 @@
       <change beforePath="$PROJECT_DIR$/../../12.11.2020-JS-ActionOnPage-Home_Task/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../12.11.2020-JS-ActionOnPage-Home_Task/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../27.10.2020 -js-home_task/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../27.10.2020 -js-home_task/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/avto/Avto.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/avto/AvtoComponent.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/comment/Comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/comment/Comment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/comments/Comments.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/comments/Comments.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/post/PostComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post/PostComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/posts/Posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/posts/Posts.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +32,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/../.." value="master" />
+        <entry key="$PROJECT_DIR$/../.." value="react-lesson-03.12" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -63,7 +62,8 @@
       <option name="presentableId" value="Default" />
       <updated>1606935563163</updated>
       <workItem from="1606935573448" duration="673000" />
-      <workItem from="1606995486689" duration="7494000" />
+      <workItem from="1606995486689" duration="7789000" />
+      <workItem from="1607325366693" duration="5411000" />
     </task>
     <servers />
   </component>

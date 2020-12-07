@@ -1,21 +1,17 @@
 import React, {Component} from 'react';
 import Comment from "../comment/Comment";
+import {CommentService} from "../../services/serviceComment/CommentService";
 
 class Comments extends Component {
-
+    commentService = new CommentService();
     state = {comments: [], selectComment: null}
 
     componentDidMount() {
-        fetch('https://jsonplaceholder.typicode.com/comments')
-            .then(value => value.json())
-            .then(commentsFromApi => {
-                this.setState({comments: commentsFromApi});
-            })
+        this.commentService.getAllComments().then(value => this.setState({comments: value}))
     }
 
     selectThisComment = (id) => {
-        let comment = this.state.comments.find(value => value.id === id);
-        this.setState({selectComment : comment});
+        this.commentService.getCommentById(id).then(value => this.setState({selectComment: value}));
     }
 
     render() {
@@ -31,7 +27,7 @@ class Comments extends Component {
                 }
                 <hr/>
                 {
-                    selectComment && <Comment item = {selectComment}/>
+                    selectComment && <Comment item = {selectComment} isShowBtn={true}/>
                 }
             </div>
         );

@@ -1,21 +1,17 @@
 import React, {Component} from 'react';
 import PostComponent from "../post/PostComponent";
+import {PostService} from "../../services/servicePost/PostService";
 
 class Posts extends Component {
-
+    postService = new PostService();
     state = {posts: [], selectPost: null}
 
     componentDidMount() {
-        fetch('https://jsonplaceholder.typicode.com/posts')
-            .then(value => value.json())
-            .then(postsFromApi => {
-                this.setState({posts: postsFromApi});
-            });
+        this.postService.getAllPosts().then(value => this.setState({posts: value}))
     }
 
     selectThisPost = (id) => {
-      let post = this.state.posts.find(value => value.id === id);
-      this.setState({selectPost : post});
+        this.commentService.getPostById(id).then(value => this.setState({selectPost: value}));
     }
 
     render() {
@@ -32,7 +28,7 @@ class Posts extends Component {
                 }
                 <hr/>
                 {
-                    selectPost && <PostComponent item = {selectPost}/>
+                    selectPost && <PostComponent item = {selectPost} isShowBtn={true}/>
                 }
             </div>
 

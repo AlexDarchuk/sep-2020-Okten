@@ -2,11 +2,12 @@ import React, {Component} from 'react';
 
 class Comment extends Component {
     render() {
-        let {item, selectThisComment} = this.props;
+        let {item, selectThisComment, isShowBtn} = this.props;
         return (
             <div>
                 {item.id} - {item.name} - {item.email} - {item.body}
-                <button onClick={() => selectThisComment(item.id)}>Select me</button>
+                {!isShowBtn &&
+                    <button onClick={() => selectThisComment(item.id)}>Select me</button>}
             </div>
         );
     }

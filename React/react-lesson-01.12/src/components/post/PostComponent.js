@@ -2,11 +2,12 @@ import React, {Component} from 'react';
 
 class PostComponent extends Component {
     render() {
-        let {item, selectThisPost} = this.props;
+        let {item, selectThisPost, isShowBtn} = this.props;
         return (
             <div>
                 {item.id} - {item.title} - {item.body}
-                <button onClick={() =>selectThisPost(item.id)}>Select me</button>
+                {!isShowBtn &&
+                    <button onClick={() =>selectThisPost(item.id)}>Select me</button>}
             </div>
         );
     }
