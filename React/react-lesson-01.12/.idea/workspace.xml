@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88218c66-a24e-4184-a362-5e7d05e24aed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/services/serviceComment/CommentService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/servicePost/PostService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/user/User.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/users/Users.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/serviceUser/UserService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../02.11.2020-JS-DOM-home_task/task2/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../02.11.2020-JS-DOM-home_task/task2/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../03.11.2020-JS-Function-Home_Task/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../03.11.2020-JS-Function-Home_Task/js/main.js" afterDir="false" />
@@ -12,10 +13,15 @@
       <change beforePath="$PROJECT_DIR$/../../27.10.2020 -js-home_task/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../27.10.2020 -js-home_task/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/comment/Comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/comment/Comment.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/comments/Comments.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/comments/Comments.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/post/PostComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post/PostComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/posts/Posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/posts/Posts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/serviceComment/CommentService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/serviceComment/CommentService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/servicePost/PostService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/servicePost/PostService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,10 +38,13 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/../.." value="react-lesson-03.12" />
+        <entry key="$PROJECT_DIR$/../.." value="react-lesson-05.12" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="1l75ytpjlXCMyupxPYIIHaWXZDt" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -51,6 +60,7 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -63,7 +73,8 @@
       <updated>1606935563163</updated>
       <workItem from="1606935573448" duration="673000" />
       <workItem from="1606995486689" duration="7789000" />
-      <workItem from="1607325366693" duration="5411000" />
+      <workItem from="1607325366693" duration="6396000" />
+      <workItem from="1607412437493" duration="9542000" />
     </task>
     <servers />
   </component>
@@ -81,5 +92,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

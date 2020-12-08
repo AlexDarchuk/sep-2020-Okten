@@ -1,35 +1,39 @@
 import React, {Component} from 'react';
 import PostComponent from "../post/PostComponent";
 import {PostService} from "../../services/servicePost/PostService";
+import {Route, Switch} from "react-router-dom";
+
 
 class Posts extends Component {
     postService = new PostService();
     state = {posts: [], selectPost: null}
 
-    componentDidMount() {
-        this.postService.getAllPosts().then(value => this.setState({posts: value}))
+    async componentDidMount() {
+        let posts = await this.postService.getAllPosts();
+        this.setState({posts})
     }
 
-    selectThisPost = (id) => {
-        this.commentService.getPostById(id).then(value => this.setState({selectPost: value}));
-    }
 
     render() {
-    let {posts, selectPost} = this.state;
+    let {posts} = this.state;
         return (
             <div>
-                <h1>All posts</h1>
                 {
                     posts.map(value => (<PostComponent
                         item = {value}
                         key = {value.id}
-                        selectThisPost = {this.selectThisPost}
                     />))
                 }
                 <hr/>
-                {
-                    selectPost && <PostComponent item = {selectPost} isShowBtn={true}/>
-                }
+
+                <div>
+                    <Switch>
+                        <Route path={'/posts/:id'} render={() => {
+
+                        }}/>
+
+                    </Switch>
+                </div>
             </div>
 
 

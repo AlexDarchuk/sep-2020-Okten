@@ -1,16 +1,16 @@
 import React, {Component} from 'react';
+import {Link, withRouter} from "react-router-dom";
+
 
 class Comment extends Component {
     render() {
-        let {item, selectThisComment, isShowBtn} = this.props;
+        let {item, match: {url}} = this.props;
         return (
             <div>
-                {item.id} - {item.name} - {item.email} - {item.body}
-                {!isShowBtn &&
-                    <button onClick={() => selectThisComment(item.id)}>Select me</button>}
+                {item.id} - {item.name} - {item.email} - {item.body} - <Link to={`${url}/${item.id}`}>info</Link>
             </div>
         );
     }
 }
 
-export default Comment;
+export default withRouter(Comment);
