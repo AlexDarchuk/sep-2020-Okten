@@ -1,43 +1,46 @@
 import React, {Component} from 'react';
+import CommentService from "../../services/CommentService";
 import Comment from "../comment/Comment";
-import {CommentService} from "../../services/serviceComment/CommentService";
-import {Route, Switch} from "react-router-dom";
-
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+    withRouter
+} from "react-router-dom";
+import FullComment from "../fullComment/FullComment";
 
 class Comments extends Component {
     commentService = new CommentService();
-    state = {comments: [], selectComment: null}
+
+    state = {comments:[]};
 
     async componentDidMount() {
-        let comments = await this.commentService.getAllComments();
-        this.setState({comments});
+        let comments = await this.commentService.comments();
+        this.setState({comments})
     }
 
-
-
     render() {
-        let {comments} = this.state
+        let {comments} = this.state;
+        let {match: {url}}= this.props;
         return (
             <div>
                 {
-                    comments.map(value => (<Comment
-                    item = {value}
-                    key = {value.id}
-                    />))
+                    comments.map(value => {
+                        return <Comment item = {value} key = {value.id}/>
+                    })
                 }
                 <hr/>
-
-                <div>
-                    <Switch>
-                        <Route path={'/coments/:id'} render={() => {
-
-                        }}/>
-
-                    </Switch>
-                </div>
+                <Switch>
+                    <Route path={url + '/:id'} render={(props) =>{
+                        let {match: {params:{id}}} = props;
+                        return <FullComment {...props} key = {id}/>
+                    }}/>
+                </Switch>
+                <hr/>
             </div>
         );
     }
 }
 
-export default Comments;
+export default withRouter(Comments);
